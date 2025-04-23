@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Loan calculator </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-amount">
+                <form id="handleSubmitForm">
+                    <div class="form-element" >
+                        <p> $</p>
+                        <input type="text" placeholder="Loan Amount" type="number" id="LoanAmount"/>
+                    </div>
+                    <div class="form-element">
+                        <p> % </p>
+                        <input type="text" placeholder="Interest" type="number" id="interestAmount"/>
+                    </div>
+                    <div class="form-element">
+                        <input type="text" placeholder="Years Of Pay" type="number" id="yearsOfPay"/>
+                    </div>
+                    <button> Calculate </button>
+                </form>
+            </div>
+            <div class="result">
+                <h3> Result </h3>
+            </div>
+            <div class="amount-calculator">
+                <form>
+                    <div class="form-element" >
+                        <input type="text" placeholder="Monthly Amount" type="number" id="montlyAmount"/>
+                    </div>
+                    <div class="form-element">   
+                        <input type="text" placeholder="Total Amount" type="number" id="totalAmount"/>
+                    </div>
+                    <div class="form-element">
+                        <input type="text" placeholder="Total Interest" type="number" id="totalInterest"/>
+                    </div>
+                    
+                </form>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
