@@ -5,20 +5,23 @@
     </head>
     <body>
         <div class="container">
+            <div class="heading">
+                <h3> Loan Calculator </h3>
+            </div>
             <div class="input-amount">
                 <form id="handleSubmitForm">
                     <div class="form-element" >
-                        <p> $</p>
-                        <input type="text" placeholder="Loan Amount" type="number" id="LoanAmount" required/>
+                        <label class="label-data"> $</label>
+                        <input type="text" placeholder="Loan Amount" type="number" class="input-data" id="LoanAmount" required/>
                     </div>
                     <div class="form-element">
-                        <p> % </p>
-                        <input type="text" placeholder="Interest" type="number" id="interestAmount" required/>
+                        <label class="label-data"> % </label>
+                        <input type="text" placeholder="Interest" type="number" class="input-data" id="interestAmount" required/>
                     </div>
                     <div class="form-element">
-                        <input type="text" placeholder="Years Of Pay" type="number" id="yearsOfPay" required/>
+                        <input type="text" placeholder="Years Of Pay" type="number" class="input-data" id="yearsOfPay" required/>
                     </div>
-                    <button> Calculate </button>
+                    <button class="btn"> Calculate </button>
                 </form>
             </div>
             <div class="result">
@@ -27,16 +30,16 @@
             <div class="amount-calculator">
                 <form  id="myForm" style="display: none">
                     <div class="form-element" >
-                        <label> Monthly Payment </label>
-                        <input type="text" placeholder="Monthly Amount" type="number" id="montlyAmount"/>
+                        <label class="label-data"> Monthly Payment </label>
+                        <input type="text" placeholder="Monthly Amount" type="number" class="input-data" id="montlyAmount"/>
                     </div>
                     <div class="form-element">  
-                        <label> Total Amount </label> 
-                        <input type="text" placeholder="Total Amount" type="number" id="totalAmount"/>
+                        <label class="label-data"> Total Amount </label> 
+                        <input type="text" placeholder="Total Amount" type="number" class="input-data" id="totalAmount"/>
                     </div>
                     <div class="form-element">
-                        <label> Total Interest </label>
-                        <input type="text" placeholder="Total Interest" type="number" id="totalInterest"/>
+                        <label class="label-data"> Total Interest </label>
+                        <input type="text" placeholder="Total Interest" type="number" class="input-data" id="totalInterest"/>
                     </div>
                     
                 </form>
