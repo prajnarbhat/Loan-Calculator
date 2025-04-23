@@ -5,6 +5,7 @@ const yearsOfPay = document.getElementById('yearsOfPay');
 const montlyAmount = document.getElementById('montlyAmount')
 const totalAmount = document.getElementById('totalAmount');
 const totalInterestValue = document.getElementById('totalInterest');
+const myForm = document.getElementById('myForm');
 
 function resetForm() {
     loanAmount.value = "";
@@ -39,6 +40,9 @@ handleSubmitForm.addEventListener('submit', (e) =>{
     const amount = parseFloat(loanAmount.value);
     const interest = parseFloat(interestAmount.value);
     const years = parseFloat(yearsOfPay.value);
-  
+    
+    myForm.style.display = 'block';
     calculateLoan(amount, interest, years);
+
+
 })

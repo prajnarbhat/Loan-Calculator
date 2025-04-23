@@ -9,14 +9,14 @@
                 <form id="handleSubmitForm">
                     <div class="form-element" >
                         <p> $</p>
-                        <input type="text" placeholder="Loan Amount" type="number" id="LoanAmount"/>
+                        <input type="text" placeholder="Loan Amount" type="number" id="LoanAmount" required/>
                     </div>
                     <div class="form-element">
                         <p> % </p>
-                        <input type="text" placeholder="Interest" type="number" id="interestAmount"/>
+                        <input type="text" placeholder="Interest" type="number" id="interestAmount" required/>
                     </div>
                     <div class="form-element">
-                        <input type="text" placeholder="Years Of Pay" type="number" id="yearsOfPay"/>
+                        <input type="text" placeholder="Years Of Pay" type="number" id="yearsOfPay" required/>
                     </div>
                     <button> Calculate </button>
                 </form>
@@ -25,14 +25,17 @@
                 <h3> Result </h3>
             </div>
             <div class="amount-calculator">
-                <form>
+                <form  id="myForm" style="display: none">
                     <div class="form-element" >
+                        <label> Monthly Payment </label>
                         <input type="text" placeholder="Monthly Amount" type="number" id="montlyAmount"/>
                     </div>
-                    <div class="form-element">   
+                    <div class="form-element">  
+                        <label> Total Amount </label> 
                         <input type="text" placeholder="Total Amount" type="number" id="totalAmount"/>
                     </div>
                     <div class="form-element">
+                        <label> Total Interest </label>
                         <input type="text" placeholder="Total Interest" type="number" id="totalInterest"/>
                     </div>
                     
